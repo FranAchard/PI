@@ -1,0 +1,155 @@
+.fondo {
+    height: 700px;
+    display: block;
+
+    text-decoration: none;
+    outline: none !important;
+
+    list-style: none;
+
+    text-align: center;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    -webkit-filter: blur(5px);
+
+    filter: blur(5px);
+}
+
+.content {
+    margin: 40px;
+    display: flex;
+    z-index: 1059; 
+    position: fixed;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.164);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.8px);
+    -webkit-backdrop-filter: blur(1.8px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.letra {
+    width: 700px;
+    color: #000000;
+
+}
+
+.image-desc {
+    margin: 20px;
+    width: 300px;
+}
+
+.img {
+    width: 500px;
+    height: 560px;
+    margin: 30px;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bback {
+    padding-left: 50px;
+    display: flex;
+    height: 3em;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+
+.bbackspan {
+    color: #969494;
+}
+
+.bback>.bbackdiv {
+    color: #969494;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+}
+
+.bback:hover>.bbackdiv {
+    color: #2495A4;
+    transform: translateX(-5px);
+}
+
+.bback:hover {
+    color: #2495A4;
+    background: #00000000;
+    transform: translateY(-2px);
+}
+
+.bback:hover .bbackdiv {
+    color: #2495A4;
+}
+
+.bback:hover .bbackdiv {
+    color: #2495A4;
+}
+
+.bback:hover .bbackspan {
+    color: #2495A4;
+}
+
+.bback::before {
+    color: #2495A4;
+    width: 1.5625rem;
+    height: 2px;
+    background: rgb(0, 0, 0);
+    top: 50%;
+    left: 1.5em;
+    position: absolute;
+    transform: translateY(-50%);
+    transform-origin: center;
+    transition: background 0.3s linear, width 0.3s linear;
+}
+
+.butondetail {
+    position: absolute;
+    margin-bottom: 20000px;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+@media (max-width:1210px) {
+    .letra {
+        display: table-header-group;
+    }
+}
+.btn-delete{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    top:480px;  
+    width:150px;
+    height:30px;
+    background-color: #000000;
+    color:red;
+    font-size:20px;
+}
+.btn-delete:hover{
+    background-color:red;
+    color: #000000;
+    border:none;
+}
