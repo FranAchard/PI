@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import SearchBar from "../../SearchBar";
-import "./nav.css"
+import "./nav.css";
+import SearchBar from "../SeachBar/SearchBar";
 
 export default function Nav({ paginado, resetea }) {
     return (

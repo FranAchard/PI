@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { searchVideoagame } from "../Redux/actions";
-import "../styles/SearchBar.css"
+import { searchVideoagame } from "../../../Redux/actions";
+import "./SearchBar.css"
 
 export default function SearchBar({ paginado, resetea }) {
     const dispatch = useDispatch();

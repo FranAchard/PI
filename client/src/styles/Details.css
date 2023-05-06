@@ -87,30 +87,30 @@
 }
 
 .bback:hover>.bbackdiv {
-    color: #2495A4;
+    color: #a42424;
     transform: translateX(-5px);
 }
 
 .bback:hover {
-    color: #2495A4;
+    color: #a42424;
     background: #00000000;
     transform: translateY(-2px);
 }
 
 .bback:hover .bbackdiv {
-    color: #2495A4;
+    color: #a42424;
 }
 
 .bback:hover .bbackdiv {
-    color: #2495A4;
+    color: #a42424;
 }
 
 .bback:hover .bbackspan {
-    color: #2495A4;
+    color: #a42424;
 }
 
 .bback::before {
-    color: #2495A4;
+    color: #a42424;
     width: 1.5625rem;
     height: 2px;
     background: rgb(0, 0, 0);

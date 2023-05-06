@@ -42,7 +42,7 @@
     position: absolute;
     width: 0%;
     height: 2px;
-    background-color: #630ec5;
+    background-color: #a42424;
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     transition-duration: 400ms;
     transition-property: width, left;

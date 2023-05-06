@@ -5,7 +5,7 @@ p.danger {
 
 fieldset {
     border-radius: 7px;
-    border: solid #630ec5;
+    border: solid #a42424;
     width: 300px;
 }
 
@@ -17,7 +17,7 @@ textarea {
     --width-of-input: 200px;
     --border-height: 1px;
     --border-before-color: rgba(221, 221, 221, 0.39);
-    --border-after-color: #630ec5;
+    --border-after-color: #a42424;
     --input-hovered-color: #4985e01f;
     position: relative;
     width: var(--width-of-input);
@@ -97,7 +97,7 @@ input:focus~.input-border {
     position: absolute;
     width: 0%;
     height: 2px;
-    background-color: #630ec5;
+    background-color: #a42424;
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     transition-duration: 400ms;
     transition-property: width, left;
@@ -113,7 +113,7 @@ input:focus~.input-border {
 }
 
 input:checked {
-    border: 1px solid #630ec5;
+    border: 1px solid #a42424;
 }
 
 .container {
@@ -156,7 +156,7 @@ input:checked {
 }
 
 .input:button {
-    color: #630ec5;
+    color: #a42424;
 }
 
 .columnas {
@@ -200,7 +200,7 @@ input:checked {
 }
 
 .back:hover>.backdiv {
-    color: #3f097e;
+    color: #a42424;
     transform: translateX(-5px);
 }
 
@@ -210,15 +210,15 @@ input:checked {
 }
 
 .back:hover .backdiv {
-    color: #3f097e;
+    color: #a42424;
 }
 
 .back:hover .backdiv {
-    color: #3f097e;
+    color: #a42424;
 }
 
 .back:hover .backspan {
-    color: #3f097e;
+    color: #a42424;
 }
 
 
