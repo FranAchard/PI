@@ -1,0 +1,254 @@
+p.danger {
+    color: red;
+    font-size: 10px;
+}
+
+fieldset {
+    border-radius: 7px;
+    border: solid #a42424;
+    width: 300px;
+}
+
+textarea {
+    outline: none;
+}
+
+.form {
+    --width-of-input: 200px;
+    --border-height: 1px;
+    --border-before-color: rgba(221, 221, 221, 0.39);
+    --border-after-color: #a42424;
+    --input-hovered-color: #4985e01f;
+    position: relative;
+    width: var(--width-of-input);
+}
+
+/* styling of Input */
+.input {
+    margin-top: 2px;
+    color: #fff;
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+    border-bottom: var(--border-height) solid var(--border-before-color);
+    outline: none;
+}
+
+/* styling of animated border */
+.input-border {
+    position: absolute;
+    background: var(--border-after-color);
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+/* Hover on Input */
+input:hover {
+    background: var(--input-hovered-color);
+}
+
+input:focus {
+    outline: none;
+}
+
+/* here is code of animated border */
+input:focus~.input-border {
+    width: 100%;
+}
+
+.btn {
+    height: 38px;
+    font-size: 0.9rem;
+    font-size: 15px;
+    color: rgb(150, 148, 148);
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    border-bottom: 1px solid rgba(221, 221, 221, 0.39);
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+
+.btn:focus,
+.btn:hover {
+    color: rgba(221, 221, 221, 0.39);
+}
+
+.btn:focus:after,
+.btn:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+.btn:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #a42424;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+.leter {
+    font-size: 0.9rem;
+    font-size: 15px;
+    color: rgb(150, 148, 148);
+    display: flex;
+    font-size: 0.9rem;
+    font-size: 15px;
+}
+
+input:checked {
+    border: 1px solid #a42424;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.genders-platforms-container {
+    display: flex;
+    justify-content: center;
+    grid-gap: 1rem;
+    gap: 1rem;
+}
+
+.basic-info {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#Description {
+    width: auto;
+    height: 99px;
+    max-height: 99px;
+}
+
+.justgenders {
+    max-height: 263px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+}
+
+.input:button {
+    color: #a42424;
+}
+
+.columnas {
+    display: grid;
+    gap: 1px;
+    padding-left: 1rem;
+}
+
+.platform-cont {
+    display: grid;
+    gap: 1px;
+    padding-left: 1rem;
+}
+
+.back {
+    padding-left: 50px;
+    display: flex;
+    height: 3em;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+
+.backspan {
+    color: #969494;
+}
+
+.back>.backdiv {
+    color: #969494;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+}
+
+.back:hover>.backdiv {
+    color: #a42424;
+    transform: translateX(-5px);
+}
+
+.back:hover {
+    background: #000000;
+    transform: translateY(-2px);
+}
+
+.back:hover .backdiv {
+    color: #a42424;
+}
+
+.back:hover .backdiv {
+    color: #a42424;
+}
+
+.back:hover .backspan {
+    color: #a42424;
+}
+
+
+.back::before {
+    content: " ";
+    width: 1.5625rem;
+    height: 2px;
+    background: black;
+    top: 50%;
+    left: 1.5em;
+    position: absolute;
+    transform: translateY(-50%);
+    transform-origin: center;
+    transition: background 0.3s linear, width 0.3s linear;
+}
+
+@media (max-width:610px) {
+    .form {
+        width: auto;
+    }
+
+    .basic-info {
+        justify-content: center;
+        gap: 1rem;
+        display: grid;
+    }
+
+    .genders-platforms-container {
+        display: grid;
+    }
+}
+
+;
