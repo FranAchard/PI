@@ -1,4 +1,3 @@
-import not_found from "../media/not_found.webp"
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import "../styles/Home.css";
@@ -104,10 +103,6 @@ export default function Home() {
                     handleGender={handleGender}
                     allGenders={allGenders}
                 />
-                <div className="error-content">
-                    <h3 className="error_h3" style={{ color: "#630ec5" }}>¡Not found!</h3>
-                    <img className="error_image" src={not_found} alt="not found" />
-                </div>
             </div>
         )
     } else {

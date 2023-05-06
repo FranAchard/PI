@@ -2,7 +2,7 @@ import { Route, Switch } from "react-router-dom";
 import React from "react";
 import "./App.css";
 import Home from "./Pages/Home";
-import start from "./Pages/Start";
+import Start from "./components/Landing/Start";
 import Details from "./Pages/Details";
 import Create from "./Pages/Create";
 
@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route exact path="/" component={start} />
+        <Route exact path="/" component={Start} />
 
         <Route exact path="/videogames">
           <Home />
