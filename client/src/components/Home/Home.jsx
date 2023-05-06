@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import "../styles/Home.css";
+import './home.css'
 import {
     getAllVideogames,
     filterOrder,
@@ -8,12 +8,12 @@ import {
     getAllGenres,
     filterGender,
     loading,
-} from "../Redux/actions";
-import Card from "../components/Cards";
-import Pagina from "../components/Paginator";
-import Load from "../components/Loads";
-import Options from "../components/Option";
-import Nav from "./Nav";
+} from "../../Redux/actions";
+import Card from "../Cards";
+import Pagina from "../Paginator";
+import Load from "../Loads";
+import Options from "../Option";
+import Nav from "./Nav/Nav";
 
 export default function Home() {
     const dispatch = useDispatch();
